@@ -14,7 +14,7 @@ npm install -g unused-assets-cli
 # Scan assets and list unused files
 unused-assets
 
-# Scan custom patterns
+# Scan custom patterns (default src/assets/**/*.*)
 unused-assets -p "src/assets/images/**/*.*" "src/assets/fonts/**/*.*"
 
 # Remove unused files interactively
@@ -27,6 +27,8 @@ unused-assets --remove --force
 ## Build & Development
 
 ```bash
-git clone <repo>
+git clone [<repo>](https://github.com/vazgen6/unused-assets-cli)
 npm install
 npm run build
+# To test it locally
+npm link
